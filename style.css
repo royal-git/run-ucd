@@ -1,0 +1,493 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway|Source+Sans+Pro|Alfa+Slab+One|Titillium+Web:200');
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline
+}
+
+:root {
+    --font-raleway: 'Raleway', sans-serif;
+    --font-titilium: 'Titillium Web', sans-serif;
+    --font-alfa: 'Alfa Slab One', cursive;
+    --font-source: 'Source Sans Pro', sans-serif;
+    --shadow: rgba(0, 0, 0, 0.2);
+    ;
+}
+
+.about-us-main {
+    padding: 8em 0 0 0;
+    font-family: var(--font-source);
+    text-align: center;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    /*background: rgb(1, 22, 30);*/
+    background: white;
+}
+
+.about-us-main p {
+    letter-spacing: 1px;
+    text-transform: none;
+}
+
+.social-button {
+    text-align: center;
+    font-size: 3em;
+    opacity: 0.8;
+}
+
+.about-us-social {
+    padding: 2em 0 2em 0;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+#map {
+    width: 100%;
+    margin: 0 auto;
+    height: 400px;
+    background-color: grey;
+}
+
+header li {
+    display: inline;
+}
+
+header ul {
+    display: inline-block;
+    margin-left: 2em;
+}
+
+header h1 {
+    display: inline-block;
+    line-height: 3.5em;
+    letter-spacing: 0.2em;
+    font-size: 1em;
+}
+
+header {
+    -webkit-box-shadow: 0 1px 5px var(--shadow);
+    -moz-box-shadow: 0 1px 5px var(--shadow);
+    box-shadow: 0 1px 5px var(--shadow);
+    position: fixed;
+    z-index: 99;
+    height: 3.5em;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+}
+
+.container-full {
+    width: 100%;
+    margin: 0 auto;
+}
+
+header nav {
+    display: inline;
+    float: right;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+    font-size: 0.9em;
+    line-height: 3.9em;
+}
+
+.twentyPercent {
+    width: 20%;
+    display: inline-block;
+}
+
+.fortyPercent {
+    max-width: 40%;
+    display: inline-block;
+}
+
+.thirtyPercent {
+    width: 29%;
+    display: inline-block;
+}
+
+.fiftyPercent {
+    width: 49%;
+    display: inline-block;
+}
+
+.sixtyPercent {
+    width: 60%;
+    display: inline-block;
+}
+
+.seventyPercent {
+    width: 70%;
+    display: inline-block;
+}
+
+.eightyPercent {
+    width: 80%;
+    display: inline-block;
+}
+
+.findUs {
+    padding: 6em 0 0 0;
+    background: #FFFFFF;
+    text-align: center;
+}
+
+.ras-info {
+    padding: 6em 0;
+    text-align: center;
+    font-family: var(--font-titilium);
+}
+
+.ras-info h1 {
+    font-size: 2.5em;
+    display: inline-block;
+    border-radius: 6px;
+}
+
+.ras-info p {
+    font-size: 1em;
+    margin: 1em 0;
+    min-width: 40%;
+}
+
+.ras-signup h1 {
+    font-family: var(--font-titilium);
+}
+
+p {
+    margin: 1em 0;
+}
+
+.ras-main {
+    background: url('images/running-shoes.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: var(--font-alfa);
+    padding: 3em 0 1em 0;
+    color: white;
+    text-align: center;
+    font-size: 2em;
+}
+
+.ras-signup {
+    padding: 6em 0;
+}
+
+.center-text {
+    text-align: center;
+}
+
+body {
+    font-family: var(--font-source);
+}
+
+@media screen and (max-width: 400px) {
+    .ras-logo {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .ras-logo {
+        width: 30%;
+    }
+}
+
+.main {
+    background: url('images/image2.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 3em 0 1.5em 0;
+    color: white;
+    text-align: center;
+    font-size: 2em;
+}
+
+.group-main {
+    background: url('images/group-runs.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 6em 0;
+    color: white;
+    text-align: center;
+    font-size: 2em;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 80%;
+}
+
+.main .container {
+    padding: 2em 3em;
+    color: white;
+    border-radius: 3px;
+}
+
+.top-navbar {
+    background: #FFFFFF;
+    width: 100%;
+    color: black;
+}
+
+.findus-paragraph {
+    margin: 2em 0 6em 0;
+    line-height: 1.8em;
+}
+
+.contact-us {
+    padding: 6em 0;
+    background: #FFFFFF;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+.contactbox {
+    padding: 6em 0;
+    background: rgb(236, 241, 248);
+    border-radius: 5px;
+}
+
+.email-input {
+    border: 0;
+    display: inline-block;
+    /* padding: 1em 15em; */
+    border-radius: 6px;
+    padding: 0 2em;
+    height: 3em;
+    font-family: var(--font-source);
+    font-size: 19px;
+}
+
+i.fa.fa-paper-plane {
+    font-size: 2em;
+}
+
+.rasInput {
+    border: 2px rgba(69, 71, 73, 0.5) solid;
+    /* float: right; */
+    padding: 1em 3em;
+    border-radius: 3px;
+    font-family: var(--font-raleway);
+    font-size: 1em;
+}
+
+.ras-submit {
+    display: block;
+    cursor: pointer;
+    border: 0;
+}
+
+.email-submit {
+    border: 0;
+    font-family: var(--font-raleway);
+    text-transform: uppercase;
+    padding: 1em;
+    border-radius: 3px;
+    cursor: pointer;
+    background-color: rgb(176, 208, 255);
+    margin-left: 2em;
+    line-height: 2em;
+    display: inline-block;
+    /* top: 16px; */
+    /* font-size: 17px; */
+    padding-top: 1.7em;
+    padding-right: 2em;
+    padding-left: 2em;
+}
+
+.contact-us h1 {
+    margin-bottom: 1em;
+}
+
+.email-submit:hover {
+    background-color: rgb(224, 223, 255);
+}
+
+.email-validation {
+    color: red;
+    display: none;
+}
+
+.email-svg {
+    width: 400px;
+    margin: 2em 0;
+    height: 100px;
+    display: inline-block;
+}
+
+.group-main {
+    background: url('images/group-runs.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 6em 0;
+    color: white;
+    text-align: center;
+    font-size: 2em;
+}
+
+.group-info {
+    padding: 6em 0;
+    font-family: var(--font-source);
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+@media screen and (max-width: 1000px) {
+    .link {
+        display: none;
+    }
+    header .container {
+        max-width: 95%;
+    }
+    header nav {
+        width: 0px;
+    }
+    .dropdown-menu {
+        display: block;
+        float: right;
+        cursor: pointer;
+    }
+    .findus-paragraph {
+        max-width: 90%;
+        text-align: center;
+        display: inline-block;
+    }
+}
+
+.float-none {
+    float: none;
+}
+
+.display-block {
+    display: block;
+}
+
+.height-set {
+    height: 17.5em;
+}
+
+@media screen and (min-width: 1000px) {
+    header ul li {
+        display: inline-block;
+    }
+    .dropdown-menu {
+        display: none;
+    }
+    .findus-paragraph {
+        max-width: 60%;
+        text-align: center;
+        display: inline-block;
+    }
+}
+
+#menu {
+    line-height: 2em;
+    font-size: 1.5em;
+    border: 0;
+    background: none;
+    cursor: pointer;
+}
+
+.email-thanks {
+    padding: 6em 0;
+    text-align: center;
+}

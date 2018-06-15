@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>UCD Running Club</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://use.fontawesome.com/b4941cbe2f.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" async="async"></script>
+</head>
+
+<body>
+
+    <script>
+        function initMap() {
+            var uluru = {
+                lat: 53.308008,
+                lng: -6.229326
+            };
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 16,
+                center: uluru
+            });
+            var marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+            });
+        }
+
+        $(document).ready(function() {
+
+            window.sr = ScrollReveal();
+            sr.reveal('.ras-info', {
+                duration: 1000
+            }, 50);
+
+        });
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA610UIlrDmcoi2DIWtzaoRrjuTApycuEU&callback=initMap">
+    </script>
+    <header class="top-navbar">
+        <div class="container">
+            <h1>
+                <a href="index.html"> UCD RUNNING CLUB</a>
+            </h1>
+            <nav>
+                <ul class="dropdown-menu">
+                    <li id="menu">☰</li>
+                </ul>
+                <ul class="link-ul">
+                    <li class="link">
+                        <a href="group.html">Group Activities</a>
+                    </li>
+                </ul>
+                <ul class="link-ul">
+                    <li class="link">
+                        <a href="ras.html">Rás UCD</a>
+                    </li>
+                </ul>
+                <ul class="link-ul">
+                    <li class="link">
+                        <a href="about.html">About US</a>
+                    </li>
+                </ul>
+                <ul class="link-ul">
+                    <li class="link">
+                        <a href="mailto:runningclub@ucd.ie">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="ras-main">
+        <div class="container">
+            <div class="sixtyPercent ras-logo">
+                <h1>
+                    RÁS UCD
+                </h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="ras-info">
+        <div class="container">
+            <h1> Run for a cause </h1> (and amazing goodies!)
+            <p>The RÁS UCD is an annual 5k road race that takes place in UCD. It is a bilingual event and a fun filled day for the whole family!</p>
+            <p>Make your training and racing more meaningful by raising awareness and funds to support UCD Volunteers Overseas Projects! The event is open to all.
+            </p>
+        </div>
+        <iframe src="//embedsocial.com/facebook_album/album_photos/1324090387659707" width="100%" height="930" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+    </div>
+
+    <div class="ras-signup">
+        <div class="container">
+            <h1> Sign up today! </h1>
+            <p> You can sign up online and the fee is only €12 for students and €15 for everyone else. Be one of our first ticket buyers and you could win a free t-shirt and goodey bag!</p>
+            <p> There are plenty of prizes and refreshments! </p>
+            <form method="POST" action="ras-signup.php">
+                <input type="text" name="firstName" class="rasInput ras-name" placeholder="First Name">
+                <input type="text" name="surName" class="rasInput ras-name" placeholder="Sur Name">
+                <input type="text" name="email" class="rasInput ras-email" placeholder="email@domain.com">
+                <button type="submit" class="rasInput ras-submit">Register</button>
+            </form>
+        </div>
+    </div>
+
+
+    <div class="about-us-social">
+        <div class="container">
+            <div class="social-button">
+                <a href="#"><i class="fa clickable fa-facebook-square" style="color:rgb(28, 55, 128)" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa clickable fa-twitter-square" style="color:rgb(3, 54, 128);" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa clickable fa-google-plus-square" style="color: rgb(255, 27, 18);" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script async defer src="//maps.googleapis.com/maps/api/js?key=AIzaSyA610UIlrDmcoi2DIWtzaoRrjuTApycuEU&callback=initMap">
+    </script>
+    <script src="//unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+</body>
+
+</html>
